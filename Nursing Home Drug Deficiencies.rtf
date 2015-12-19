@@ -1,0 +1,41 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fnil\fcharset0 Cambria;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Kyra Gurney\
+Data Log\
+\
+1. This is data on nursing homes with drug-related deficiencies from Nursing Home Compare, which is compiled by the Centers for Medicaid and Medicare Services (CMS). \
+\
+2. Source: {\field{\*\fldinst{HYPERLINK "https://data.medicare.gov/Nursing-Home-Compare/Deficiencies/r5ix-sfxw#"}}{\fldrslt https://data.medicare.gov/Nursing-Home-Compare/Deficiencies/r5ix-sfxw#}}.\
+\
+3. I filtered for deficiency descriptions containing the word "drug" and exported the filtered data set as a csv file. The data set has 33,240 rows.\
+\
+4. I sorted the data by survey date to see the date range and found that the data was collected between 07/22/2010 and 11/19/15.\
+\
+5. I created a pivot table of the data filtered by survey date (between 01/01/11 and 11/19/15) to determine which states had the greatest number of drug-related deficiencies. California had 4,179 drug-related deficiencies during this time period, followed by Texas (3,152), Ohio (1,735) and Illinois (1,583). \
+\
+6. I created a pivot table of the data filtered by survey date (between 01/01/11 and 11/19/15) and by tag so that I could look at deficiencies with tag number 431 (failure to "maintain drug records and properly mark/label drugs"). I used the pivot table to count the number of deficiencies by state. There were a total of 10,162 failures to maintain drug records and properly mark/label drugs according to accepted professional standards between 01/01/11 and 11/19/15. \
+\
+7.  I copied and pasted the data from the pivot table into new columns to sort by descending to see which states had the greatest number of 431 deficiencies. The states with the greatest number of such deficiencies were California (1,290), Texas (789), Florida (605), Pennsylvania (442) and Ohio (402).  \
+\
+8. To determine whether there has been a change in the number of reported deficiencies over time, I created a new column in the data set called year and used the =YEAR function to extract the year from the date.\
+\
+9. I created a new pivot table of data filtered by survey date (between 01/01/11 and 11/19/15) and by tag (only tag 431) and counted the number of deficiencies reported by state per year. There were 56 failures to properly label drugs and maintain drug records in 2011, 1,131 in 2012, 2,985 in 2013, 3,238 in 2014 and 2,752 in 2015. \
+\
+10. To see if the number of 431 deficiencies had increased drastically between 2011 and 2014 or if there had simply been more overall deficiencies recorded between 2011 and 2014, I created a new pivot table that counted the number of deficiencies reported by Federal Provider Number per year. There were 189 deficiencies reported at nursing homes in 2011, 3,617 in 2012, 10,191 in 2013, 10,596 in 2014 and 8,633 between 01/01/15 and 11/19/15. \
+\
+11. I copied and pasted the totals from both of the above pivot tables (431 deficiencies by year and total drug-related deficiencies by year) and created a new table with these values. I created a new column for percent so that Excel could calculate the percent of the total deficiencies recorded per year that were 431 deficiencies. For each of the years between 2011 and 2015, the number of 431 deficiencies represented between 29 and 32 percent of total drug-related deficiencies. \
+\
+12. To determine the number of different types of drug-related deficiencies, I created a pivot table to count deficiency tag numbers. There are six different deficiency tag numbers, which means there are six different categories of drug-related deficiencies. \
+\
+13. I created a new pivot table to determine which nursing homes had the greatest number of drug-related deficiencies. This pivot table showed that one nursing home had 15 drug-related deficiencies between 2011 and 11/19/15. \
+\
+14. I copied and pasted the data from this pivot table and created a new column to count the number of nursing homes with more than 6 drug-related deficiencies. I used the COUNTIF function to determine how many nursing homes had been cited more than six times. Since there are only six different types of drug-related deficiencies recorded by CMS inspectors, a facility with more than 6 citations has been cited for the same type of drug-related problem more than once. I also created a fourth column and used the COUNTIF function to determine that 46 nursing homes had 10 or more drug-related deficiencies between 2011 and 11/19/15. \
+\
+15. I created a new pivot table to look at the number of 332 deficiencies (failure to keep the rate of medication errors below 5%). The pivot table showed that 4,666 of these deficiencies were reported between 2011 and 11/19/15. Texas had the greatest number (591) followed by California (412) and Illinois (379).   \
+\
+\
+}
